@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="sweetalert/sweetalert2.min.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/portfolio.css">
@@ -50,6 +51,7 @@
 			</nav>
 		</div>
 	</header>
+	
 	<!--================ End Header Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
@@ -64,7 +66,7 @@
 							<h5 class="text-uppercase">Web Developer / Programmer</h5>
 							<div class="d-flex align-items-center">
 								<a class="primary_btn" href="#skill"><span>Hire Me</span></a>
-								<a class="primary_btn tr-bg" href="cv/cv-ripal-muhammad-ramdan.pdf"><span>Get CV</span></a>
+								<button class="primary_btn mycv" href="cv/cv-ripal-muhammad-ramdan.pdf"><span>Get CV</span></button>
 							</div>
 						</div>
 					</div>
@@ -110,7 +112,7 @@
 						<p>
 							Memang sih, cukup sulit untuk bekerja sebagai Full Stack Developer, tapi saya menyukainya. Apa kalian demikain? 
 						</p>
-						<a class="primary_btn" href="cv/cv-ripal-muhammad-ramdan.pdf"><span>Download CV</span></a>
+						<button class="primary_btn mycv2" href="cv/cv-ripal-muhammad-ramdan.pdf"><span>Download CV</span></button>
 					</div>
 				</div>
 			</div>
@@ -237,13 +239,13 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="feature_item" >
-						<h4>CRUD API ReactJS (JSON)</h4>
+						<h4>API ReactJS (JSON)</h4>
 						<p class="text-muted"><a href="https://github.com/ripal-muhammad-ramdan/react-crud.github.io">ReactJS</a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="feature_item">
-						<h4>CRUD RestAPI NodeJS</h4>
+						<h4>RestAPI NodeJS</h4>
 						<p class="text-muted"><a href="https://github.com/ripal-muhammad-ramdan/nodejs.github.io">NodeJS (ExpressJS)</a></p>
 					</div>
 				</div>
@@ -255,7 +257,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="feature_item">
-						<h4>CRUD Inventory</h4>
+						<h4>Inventory</h4>
 						<p class="text-muted"><a href="https://github.com/ripal-muhammad-ramdan/php-native.github.io">PHP
 								Native</a></p>
 					</div>
@@ -318,6 +320,24 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
+	<script src="sweetalert/sweetalert2.all.min.js"></script>
+	<script>
+		document.querySelector(".mycv").addEventListener('click', function(){
+			Swal.fire({
+			icon: 'error',
+			title: 'Mohon Maaf...',
+			text: 'CV sedang dalam perbaikan :)'
+			});
+		});
+
+		document.querySelector(".mycv2").addEventListener('click', function(){
+			Swal.fire({
+			icon: 'error',
+			title: 'Mohon Maaf...',
+			text: 'CV sedang dalam perbaikan :)'
+			});
+		})
+	</script>
 </body>
 
 </html>
